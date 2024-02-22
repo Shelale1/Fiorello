@@ -1,0 +1,33 @@
+section{
+max-width: 100%;
+
+
+    .carousel-item {
+        height: 477px;
+        width: 1519px;
+       
+    background-color: transparent;
+   
+    filter: none;
+    transform: translate(0px, 0px);
+    padding-bottom: 30px;
+
+       img{
+        max-width: 100%;
+  height: auto;
+  
+  animation: zoomInOut 6s infinite alternate; /* Anahtar çerçeve animasyonunu ekliyoruz */
+
+    @keyframes zoomInOut {
+        0% {
+          transform: scale(1); /* Başlangıçta normal boyutta */
+        }
+        100% {
+          transform: scale(1.2); /* Sonunda 1.2 kat büyümüş */
+        }
+      }
+       }
+
+       
+    }
+}

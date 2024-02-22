@@ -1,0 +1,109 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Palanquin+Dark:wght@400;500;600;700&family=Poppins:ital,wght@0,200;0,500;0,600;0,700;0,800;0,900;1,300;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+section {
+  max-width: 100%;
+}
+section .carousel-item {
+  height: 477px;
+  width: 1519px;
+  background-color: transparent;
+  filter: none;
+  transform: translate(0px, 0px);
+  padding-bottom: 30px;
+}
+section .carousel-item img {
+  max-width: 100%;
+  height: auto;
+  animation: zoomInOut 6s infinite alternate; /* Anahtar çerçeve animasyonunu ekliyoruz */
+}
+@keyframes zoomInOut {
+  0% {
+    transform: scale(1); /* Başlangıçta normal boyutta */
+  }
+  100% {
+    transform: scale(1.2); /* Sonunda 1.2 kat büyümüş */
+  }
+}
+
+.container {
+  max-width: 1430px;
+  margin: auto;
+}
+.container .main {
+  display: flex;
+  justify-content: space-between;
+  padding: 43px;
+}
+.container .main .logo {
+  width: 212px;
+  height: 25px;
+}
+.container .main .logo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.container .main .menu {
+  margin-right: 35px;
+}
+.container .main .menu .list {
+  display: flex;
+  gap: 54px;
+  justify-content: space-evenly;
+}
+.container .main .menu .list li {
+  list-style: none;
+}
+.container .main .menu .list li a {
+  text-decoration: none;
+  color: #1b1b1b;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+}
+.container .main .menu .list li:nth-child(7) i {
+  font-size: 19px;
+}
+.container .main .menu .list li:nth-child(8) {
+  display: flex;
+  justify-content: space;
+  gap: 15px;
+  margin-left: -30px;
+}
+.container .main .menu .list li:nth-child(8) a {
+  position: relative;
+}
+.container .main .menu .list li:nth-child(8) a i {
+  font-size: 19px;
+}
+.container .main .menu .list li:nth-child(8) a p {
+  margin-top: 7px;
+  display: inline-block;
+}
+.container .main .menu .list li:nth-child(8) a img {
+  width: 23px;
+}
+.container .main .menu .list li:nth-child(8) a span {
+  position: absolute;
+  background-color: red;
+  color: white;
+  font-size: 10px;
+  top: -2px;
+  right: -3px;
+  width: 13px;
+  height: 13px;
+  font-weight: 600;
+  padding: 0px 3px;
+  border-radius: 50% 50%;
+}/*# sourceMappingURL=style.css.map */
